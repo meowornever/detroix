@@ -1,0 +1,260 @@
+/* generic rules */
+
+:root{
+    --prim: #131c29;
+    --sec: #ff8901;
+    --text: #596673;
+    --bgColor: #f4f4f6;
+    --buttonColor: #213349;
+    --headerFont: 'Oswald', sans-serif;
+    --textFont: 'Open Sans Condensed', sans-serif;
+}
+
+*{box-sizing: border-box;}
+
+body{
+    background-color: var(--bgColor);
+}
+
+a{
+    text-decoration: none;
+    color: var(--bgColor)
+}
+
+
+
+/* end generic */
+
+/* begin header */
+
+@media (max-width: 768px){
+    .logo-img{
+        display: block;
+        margin: 20px auto;
+        width: 100%;
+    }
+}
+.top-header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:var(--prim);
+
+}
+
+.main-header {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.main-nav-item{
+    padding: 2px 3px;
+    border-radius: 5px;
+    background-color: var(--buttonColor);
+    text-transform: uppercase;
+}
+
+@media(max-width: 768px){
+    .main-nav-item{
+    font-size: calc(14px + (14 - 14) * ((100vw - 300px) / (1600 - 300)));
+    padding: 2px 3px;
+    border-radius: 5px;
+    background-color: var(--buttonColor);
+    text-transform: uppercase;
+    }
+}
+
+/* end header */
+
+/* begin main */
+
+@media(max-width: 768px){
+    .content-img1{
+        display: block;
+        margin: 20px auto;
+        width: 100%;
+    }
+}
+
+.text{
+    text-align: justify;
+}
+
+@media (max-width: 768px){
+    .content{
+        padding: 5px;
+        border: 2px solid #ececee;
+
+    }
+
+}
+
+.content{
+    margin-top: 5px;
+    padding-right: 10px;
+    border-right: 2px solid #ececee;
+}
+
+.button{
+    margin-bottom: 10px;
+    background-color: var(--buttonColor);
+    text-transform: uppercase;
+}
+
+.subheader1{
+    font-size: 50px;
+    font-family: 'oswald', sans-serif;
+}
+
+/* end main */
+
+/* begin footer */
+
+.main-footer{
+   border-top: 1.5px solid #1f4061;
+   background: radial-gradient(
+       ellipse at top,
+       rgba(41, 70, 102,1) 0%,
+       rgba(23,32,47,1) 50%,
+       rgba(15,24,33,1) 100%);
+}
+
+.sub-header{
+    /* border:1px solid lime; */
+    color: var(--bgColor)
+}
+
+
+
+.list-text{
+    color: var(--text);
+    font-family: 'open sans condensed';
+
+}
+
+.sub-header{
+    text-transform: uppercase;
+    font-family: 'oswald', sans-serif;
+}
+
+.date{
+    font-size: 20px;
+   margin: 0;
+    
+}
+.month{
+    font-size: 10px;
+    
+} 
+
+ .news-list{
+    font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.date-div1  {
+    width: 140px;
+   height: 50px;
+   padding-left: 12px;
+   border-radius: 20%; 
+   text-transform: uppercase;
+   font-family: 'oswald';
+   color: white;
+   background-color:#bb7f40;
+
+}
+
+.date-div2  {
+   width: 140px;
+   height: 50px;
+   padding-left: 12px;
+   border-radius: 20%; 
+   text-transform: uppercase;
+   font-family: 'oswald';
+   color: white;
+   background-color:#c2643e;
+}
+
+.date-div3  {
+   width: 140px;
+   height: 50px;
+   border-radius: 20%;
+   padding-left: 12px; 
+   text-transform: uppercase;
+   font-family: 'oswald';
+   color: white;
+   background-color:#c0465d;
+}
+
+@media(max-width:768px){
+    .date-div1  {
+    width: 60px;
+    height: 50px;
+    padding-left: 12px;
+    border-radius: 20%;
+    text-transform: uppercase;
+    font-family: 'oswald';
+    color: white;
+    background-color:#bb7f40;
+
+    }
+}
+
+@media(max-width:768px){
+    .date-div2  {
+    width: 60px;
+    height: 50px;
+    padding-left: 12px;
+    border-radius: 20%; 
+    text-transform: uppercase;
+    font-family: 'oswald';
+    color: white;
+    background-color:#c2643e;
+
+    }
+}
+
+@media(max-width:768px){
+    .date-div3  {
+    width: 60px;
+    height: 50px;
+    border-radius: 20%;
+    padding-left: 12px; 
+    text-transform: uppercase;
+    font-family: 'oswald';
+    color: white;
+    background-color:#c0465d;
+    
+    }
+}
+
+
+.news-box{
+    margin-left: 10px;
+}
+
+.news-box-header{
+    font-size: 15px;
+}
+
+
+.opp-list-header{
+    font-size: 15px;
+}
+
+.service-list-item{
+    list-style-type: none;
+    list-style-image: url(../media/cog.png)
+}
+
+.opp-list-item{
+    list-style-type: none;
+    list-style-image: url(../media/chat.png)
+
+}
+
+.footer{
+    background-color: var(--prim);
+}
+
+.colophon-text{
+    color:var(--bgColor)
+}
